@@ -677,6 +677,8 @@ body {
     #container #panel .column:nth-child(5) { display: none; }
 }
 @media(min-width:992px){
+    #container #home h3 { font-size: 5em; }
+    form.search.at-home { font-size: 3em; }
     #container #panel .column { width: 25% }
     #container #panel .column:nth-child(1) { display: inline-block; }
     #container #panel .column:nth-child(2) { display: inline-block; }
