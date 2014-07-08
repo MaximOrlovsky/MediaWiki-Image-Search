@@ -655,6 +655,8 @@ body {
 /** Responsive ---------------- */
 
 @media(max-width:767px){
+    #container #home h3 { font-size: 2.5em; }
+    form.search.at-home { font-size: 1.5em; }
     #container.work #header .logo { display: none; }
     #container.work .search.at-work { margin-left: 0; }
     #container #panel .column { width: 50% }
@@ -665,6 +667,8 @@ body {
     #container #panel .column:nth-child(5) { display: none; }
 }
 @media(min-width:768px){
+    #container #home h3 { font-size: 4em; }
+    form.search.at-home { font-size: 2em; }
     #container #panel .column { width: 33.333334% }
     #container #panel .column:nth-child(1) { display: inline-block; }
     #container #panel .column:nth-child(2) { display: inline-block; }
