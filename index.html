@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+        <meta charset="UTF-8"/>
+        <title>MediaWiki Gallery Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="mediawiki gallery, mediawiki image search, mediawiki images"/>
+        <meta name="description" content="Simple MediaWiki Gallery with search"/>
+        <link rel="shortcut icon" href="/img/favicon.png"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/gallery.mediawiki.css"/>
+
+    </head>
+    <body>
+
+        <!-- Main Gallery container -->
+        <div id="container" class="container-main">
+            <header id="header">
+                <h1 class="logo">
+                    <a href="#" class="back-to-home">
+                        MediaWiki Image Search
+                    </a>
+                </h1>
+                <form class="search at-work" method="post" action="">
+                    <input type="text" name="search" placeholder="Search images" />
+                    <button type="submit">Search</button>
+                </form>
+                <a href="#" class="back-to-home close-current-search">&times;</a>
+            </header>
+            <!-- Home view -->
+            <section id="home">
+                <h3>Find beautiful images<br/> in MediaWiki</h3>
+                <form class="search at-home" method="post" action="">
+                    <input type="text" name="search" placeholder="Start your search here" />
+                    <button type="submit">Search</button>
+                    <div class="no-search-message message hidden">
+                        Nope, search line is empty
+                    </div>
+                </form>
+            </section>
+            <!-- Masonry view -->
+            <section id="panel">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+
+                <div class="messages">
+                    <div class="load-more message hidden">
+                        <a href="#">Load more images</a>
+                    </div>
+
+                    <div class="not-found-message message hidden">
+                        Images not found,
+                        <a href="#" class="back-to-home">Try with another query</a>.
+                    </div>
+
+                    <div class="finish-message message hidden">
+                        There is no more images like "<span class="query"></span>",
+                        <a href="#" class="back-to-home">Start with another query</a>.
+                    </div>
+
+                    <div class="empty-message message hidden">
+                        Can't retrieve images from "<a href="#" class="url"></a>"
+                        <br/>
+                        Does your API turned on and work properly?
+                        Check it <a href="#" class="api">here</a>.
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Progress of loading images of current search -->
+            <div id="progress"><div class="bar"></div></div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlayContainer hidden"></div>
+        <div class="overlayBg hidden"></div>
+
+        <!-- Templates -->
+        <div id="templates">
+            <div class="template-single">
+                <figure class="single">
+                    <div class="close">
+                        <a href="#">&times;</a>
+                    </div>
+                    <div class="nav prev">
+                        <a href="#">
+                            <img src="" alt="Previous Image"/>
+                        </a>
+                    </div>
+                    <img class="main image" src="" alt=""/>
+                    <div class="nav next">
+                        <a href="#">
+                            <img src="" alt="Next Image"/>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h4 class="title"></h4>
+                        <span class="author"></span>
+                    </div>
+                </figure>
+            </div>
+            <div class="template-plural">
+                <figure class="item">
+                    <img class="image" src="" alt=""/>
+                    <div class="description">
+                        <h3 class="title"></h3>
+                        <span class="author"></span>
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/gallery.mediawiki.js"></script>
+
+    </body>
+</html>
+
