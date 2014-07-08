@@ -243,7 +243,7 @@
                 this.clear();
             }
 
-            this.saveHistory(this.images);
+            this.saveHistory();
 
             this.fired = true;
 
@@ -496,7 +496,7 @@
             this.overlayContainer
                     .html(template)
                     .css({
-                        top : parseInt($(window).scrollTop(), 10) + parseInt(  parseInt($(window).scrollTop(), 10) * 0.05 , 10)
+                        top : parseInt($(window).scrollTop(), 10) + parseInt(  parseInt($(window).height(), 10) * 0.05 , 10)
                     })
                     .removeClass('hidden');
 
@@ -680,6 +680,29 @@
         loadMoreButton.on('click', function(e){
             e.preventDefault();
             Gallery.loadMore();
+        });
+
+        /**
+         * Keyboard arrows for navigation in Single Image view
+         */
+        $(document).on('keydown', function(e){
+            if ( overlayContainer.filter(':visible').length ) {
+                e = e || window.event;
+                switch (e.keyCode) {
+                    // left arrow - show previous image
+                    case 37 :
+                        overlayContainer.find('.single .nav.prev a').trigger('click');
+                        break;
+                    // right arrow - show next image
+                    case 39 :
+                        overlayContainer.find('.single .nav.next a').trigger('click');
+                        break;
+                    // escape - close Single view
+                    case 27 :
+                        overlayContainer.find('.single .close a').trigger('click');
+                        break;
+                }
+            }
         });
 
         // add focus by default to search input on home
