@@ -8,7 +8,7 @@ Technology: jQuery and CSS3 Animations
 
 Parts:
 1. Image Loader - Control image loading 
-2. Gallery - Masonry galery view
+2. Gallery - Masonry galery view + keyboard arrows navigation in Single image view + Escape close the Single image view
 
 ## How to install MediaWiki Image Search
 
