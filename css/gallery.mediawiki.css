@@ -654,7 +654,6 @@ body {
 
 /** Responsive ---------------- */
 
-
 @media(max-width:360px){
     #container #home h3 { font-size: 1.66em; }
     #conainer form.search.at-home { width: 80%; }
@@ -674,9 +673,10 @@ body {
     #container #panel .column:nth-child(5) { display: none; }
 
 }
-@media(min-width:767px){
-    #container #home h3 { font-size: 2.5em; }
-    form.search.at-home { font-size: 1.5em; }
+@media(min-width:361px){
+    #container #home h3 { font-size: 2em; }
+    form.search.at-home { font-size: 1.25em; }
+    form.search.at-home button { background-position: 1px 3px; width: 28px; }
     #container.work #header .logo { display: none; }
     #container.work .search.at-work { margin-left: 0; }
     #container #panel .column { width: 50% }
