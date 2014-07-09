@@ -2,14 +2,21 @@ MediaWiki Image Search
 ======================
 
 Simple JavaScript gallery to search and view images in MediaWiki. 
-Check the [Demo](http://sattu.net/projects/MediaWiki-Image-Search/index.html)
 
-Technology: jQuery and CSS3 Animations
+**Check the [Demo](http://sattu.net/projects/MediaWiki-Image-Search/index.html)**
 
-Parts:
+*Technology:*
+
+jQuery and CSS3 Animations
+
+*Parts:*
 
 1. Image Loader - Control image loading 
 2. Gallery - Masonry galery view + `keyboard arrows` navigation in Single image view + `Escape` close the Single image view
+
+*The UX Design:*
+
+The mockups can be found in [`mockup` folder](https://github.com/MaximOrlovsky/MediaWiki-Image-Search/tree/master/mockups)
 
 ## How to install MediaWiki Image Search
 
