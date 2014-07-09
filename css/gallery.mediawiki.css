@@ -689,6 +689,7 @@ body {
 @media(min-width:768px){
     #container #home h3 { font-size: 4em; }
     form.search.at-home { font-size: 2em; }
+    form.search.at-home button { background-position: 1px 3px; width: 28px; background-position: -28px 50%; width: 46px; }
     #container #panel .column { width: 33.333334% }
     #container #panel .column:nth-child(1) { display: inline-block; }
     #container #panel .column:nth-child(2) { display: inline-block; }
