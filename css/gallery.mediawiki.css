@@ -654,7 +654,27 @@ body {
 
 /** Responsive ---------------- */
 
-@media(max-width:767px){
+
+@media(max-width:360px){
+    #container #home h3 { font-size: 1.66em; }
+    #conainer form.search.at-home { width: 80%; }
+    form.search.at-home { font-size: 1em; }
+    form.search.at-home button { background-position: 0 2px; width: 28px; }
+    .overlayContainer .single .nav.prev, .overlayContainer .single .nav.next { display: block; clear: both; }
+    .overlayContainer .single .nav.prev { margin: 0 0 10px 0; }
+    .overlayContainer .single .nav.next { margin: 10px 0 0 0; }
+    #container.work #header .logo { display: none; }
+    #container.work .search.at-work { margin-left: 0; }
+    #container.work .search.at-work input { margin-left: 0; width: 100px; }
+    #container #panel .column { width: 100% }
+    #container #panel .column:nth-child(1) { display: inline-block; }
+    #container #panel .column:nth-child(2) { display: none; }
+    #container #panel .column:nth-child(3) { display: none; }
+    #container #panel .column:nth-child(4) { display: none; }
+    #container #panel .column:nth-child(5) { display: none; }
+
+}
+@media(min-width:767px){
     #container #home h3 { font-size: 2.5em; }
     form.search.at-home { font-size: 1.5em; }
     #container.work #header .logo { display: none; }
